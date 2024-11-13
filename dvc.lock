@@ -9,7 +9,7 @@ stages:
       size: 119729
     - path: params.yaml
       hash: md5
-      md5: 33e6b88fc46e49ba19d2739c83090fc2
+      md5: c68ade4941183c8bd0bd62166a223657
       size: 215
     - path: src/data_preprocessing.py
       hash: md5
@@ -29,7 +29,7 @@ stages:
       size: 139675
     - path: params.yaml
       hash: md5
-      md5: 33e6b88fc46e49ba19d2739c83090fc2
+      md5: c68ade4941183c8bd0bd62166a223657
       size: 215
     - path: src/train.py
       hash: md5
@@ -38,8 +38,8 @@ stages:
     outs:
     - path: model.pkl
       hash: md5
-      md5: 51f00d62608b9a05088e8384cd58558e
-      size: 4561567
+      md5: 475c79ba183c961622c14e7aaf4eba0e
+      size: 4209775
   evalaute:
     cmd: python src/evaluate.py
     deps:
@@ -49,11 +49,11 @@ stages:
       size: 139675
     - path: model.pkl
       hash: md5
-      md5: 51f00d62608b9a05088e8384cd58558e
-      size: 4561567
+      md5: 475c79ba183c961622c14e7aaf4eba0e
+      size: 4209775
     - path: params.yaml
       hash: md5
-      md5: 33e6b88fc46e49ba19d2739c83090fc2
+      md5: c68ade4941183c8bd0bd62166a223657
       size: 215
     - path: src/evaluate.py
       hash: md5
@@ -62,5 +62,5 @@ stages:
     outs:
     - path: scores.json
       hash: md5
-      md5: 41d09023a3ac727142a4d36801dc7318
-      size: 57
+      md5: 1d1adbef64821ae6566d0197d6127e93
+      size: 58
